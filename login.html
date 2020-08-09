@@ -10,11 +10,39 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <script>
+            var usr="admin";
+            var paswrd="admin"
+            function validateForm() {
+                var x = document.forms["loginfrm"]["uname"].value;
+                var y = document.forms["loginfrm"]["upasswrd"].value;
+                if (x == "")
+                {
+                    alert("username must be filled");
+                    return false;
+                }
+                else if(x!=usr)
+                {
+                    alert("incorrect username");
+                    return false;
+                }
+                if (y == "")
+                {
+                    alert("password must be filled");
+                    return false;
+                }
+                else if(y!=paswrd)
+                {
+                    alert("incorrect password");
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         <div>
             <link rel="stylesheet" type="text/css" href="formlayout.css">    
-            <center><form>
+            <center><form name="loginfrm" onsubmit="return validateForm()" action="index.html">
                     <h1 style="color: red">LOGIN</h1>
                 <label for="uname">  username:</label>
                 <input type="text" id="uname"><br/>

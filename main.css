@@ -9,14 +9,15 @@ and open the template in the editor.
 */
 body{
     background-color: black;
-    color: gray;
-    text-align: "justify"
+    color: greenyellow;
+    font-size: large;
+    text-align: "justify";
 }
 
 h1{
     color: red;
 }
 
-nav{
+h3{
     color: orangered;
 }

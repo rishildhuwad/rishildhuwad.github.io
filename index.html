@@ -9,20 +9,88 @@ and open the template in the editor.
         <title>Shreerang enterprise</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-inner img {
+                width: 100%;
+                max-height: 30%;
+                object-fit: fill;
+                background-size: contain;
+            }
+        </style>
     </head>
     <body>
+        <link rel="stylesheet" type="text/css" href="main.css">
         <center><h1>Shreerang Enterprises</h1></center>
-        <div>
-            <nav>
-                <a href="index.html">Home</a> | 
-                <a href="products.html">Products</a> |
-                <a href="applications.html">Applications</a> |
-                <a href="aboutUs.html">About Us</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">
+                <img src="images/Shreeranglow Fluorescent Pigments.jpeg" alt="logo" style="width:40px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapse_Navbar"> 
+                <span class="navbar-toggler-icon"></span> 
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapse_Navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="applications.html">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+                </div>
             </nav>
+        </div><br><br>
+        
+        <div class="container">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Shreeranglow Fluorescent Pigments.jpeg" alt="colors" width="1100" height="500">   
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Applications/FLUORESCENT PENCILS _ CRAYONS/WhatsApp Image 2020-06-10 at 3.18.24 PM.jpeg" alt="flouroscent pencils" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Applications/Fluorescent Rangoli _ Fluorescent GULAL/WhatsApp Image 2020-06-10 at 3.17.41 PM.jpeg" alt="Gulal" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Applications/EARTHEN TOYS AND IDOL  PAINTING/WhatsApp Image 2020-06-10 at 3.19.04 PM.jpeg" alt="idols" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Applications/GLASS PAINTING/WhatsApp Image 2020-06-10 at 3.22.36 PM.jpeg" alt="colored glass" width="1100" height="500">
+                </div>
+            </div>
+  
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
-    
-        <div>
+        <br><br>
+        
             <p>
               
                Colour certainly increases the beauty, realism and decorative value.
@@ -38,7 +106,7 @@ and open the template in the editor.
                are called as day-light fluorescent pigments. Shreeranglow fluorescent pigments are
                day-light fluorescent pigments and are recommended for various applications.
             </p>
-            <a href="aboutUs.html">Read more</a>
+            <a href="aboutUs.html" class="btn btn-outline-info">Read more</a>
         </div>
         <br/>
         <div>
